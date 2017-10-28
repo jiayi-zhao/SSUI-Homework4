@@ -14,5 +14,6 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://jiayi-zhao.github.io/SSUI-Homework4/"
+  "homepage": "https://jiayi-zhao.github.io/SSUI-Homework4/",
+  "deploy": "npm run build&&gh-pages -d build"
 }
