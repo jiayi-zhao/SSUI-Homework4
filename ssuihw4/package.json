@@ -14,7 +14,12 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
+<<<<<<< HEAD
   "devDependencies": {
     "gh-pages": "^1.0.0"
   }
+=======
+  "homepage": "https://jiayi-zhao.github.io/SSUI-Homework4/",
+  "deploy": "npm run build&&gh-pages -d build"
+>>>>>>> a568fcfa2740b890416487ab6a36c1dcef621153
 }
