@@ -1,28 +1,341 @@
 .App {
   text-align: center;
+  font-family: 'Quicksand', sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.App-largeDogCookieImage {
+  position: fixed;
+  display: inline-block;
+  width: auto;
+  height: 100%;
+  z-index: -2;
+  top: 0px;
+  left: 0px;
+}
+
+.App-content{
+  margin-left: 30%;
+  padding-left: 20px;
+}
+
+.App-background{
+  position: fixed;
+  margin-left: 30%;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 100%;
+  z-index: -1;
+}
+
+.App-navMenu{
+  position: relative;
+  display: inline-block;
+  float: right;
+  padding: 10px;
+}
+
+
+.App-navMenu-button{
+  display: inline-block;
+  float: left;
+  border: 3px solid pink;
+  background-color: orangered;
+  color: white;
+  font-size: 14pt;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+  cursor: default;
+}
+.active{
+  color: white; /*#FF9999*/
+}
+.App-navMenu-button:hover{
+  cursor: pointer;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
   padding: 20px;
-  color: white;
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-family: 'Kumar One Outline', cursive;
+  color: orangered;
+  font-size: 48pt;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.App-pupIcon{
+  height: 40pt;
+  width: auto;
+  display: inline-block;
+  margin-right: .4em;
+}
+
+.App-boneIcon{
+  height: 14pt;
+  width: auto;
+  display: inline-block;
+  margin-right: 5px;
 }
 
 .App-intro {
-  font-size: large;
+  text-align: left;
+  font-size: 14pt;
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+
+.productWrapper{
+  display: inline-block;
+  padding: 20px;
+  width: 300px;
+  height: 400px;
+}
+
+.productWrapper img:hover{
+  cursor:pointer;
+}
+
+.productImage{
+  width: 100%;
+}
+
+.App-aboutDog{
+  width: 60%;
+  height: auto;
+}
+
+.App-aboutDog-caption{
+  text-align: center;
+  font-size: 14pt;
+  margin: auto;
+}
+
+.App-aboutUs{
+  text-align: center;
+  font-size: 14pt;
+  margin: auto;
+  color: #808080;
+  font-style: italic;
+  margin-bottom: 1.5em;
+  width: 70%;
+}
+
+.detailPane{
+  position: fixed;
+  width: 30%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(255, 100, 100, 0.8);
+  border-right: 3px solid black;
+  box-shadow: 2px 0px 2px #e0e0e0;
+  padding: 10px;
+  padding-top: 100px;
+}
+
+.detailPane-inner{
+  padding: 10px;
+  background-color: white;
+}
+
+.productNameDetailView {
+  font-size: 23pt;
+}
+
+.Xout{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 24pt;
+  font-weight: bolder;
+  color: white;
+  cursor: default;
+}
+
+.interactiveButtons {
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.quantityButton {
+  text-align: center;
+  display: inline-block;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #95989A;
+  border-radius: 5px;
+  height: 40px;
+  width: 130px;
+  margin-right: 5px;
+}
+
+.quanButt {
+  display: inline-block;
+  color: #95989A;
+  cursor:pointer;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  font-size: 30px;
+}
+
+#quantityNum{
+  color: #95989A;
+  font-size: 25px;
+  display: inline-block;
+  padding: 5px;
+/*  height: 40px;*/
+}
+
+#decButton {
+  display: inline-block;
+  float: left;
+}
+
+#incButton {
+  display: inline-block;
+  float: right;
+}
+
+.addToCart {
+  margin-left: 5px;
+  display: inline-block;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #95989A;
+  border-radius: 5px;
+  font-size: 25px;
+  color: #95989A;
+  padding: 5px 10px 5px 10px;
+}
+
+.addToCart:hover{
+  cursor:pointer;
+}
+
+.productSubTotal {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 18pt;
+}
+
+button {
+  border: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.Container {
+  position: absolute;
+  margin: 0 15px;
+  background: #fff;
+  z-index: 99;
+  display: block;
+  top: 48px;
+  right: 0;
+  width: 360px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.cartOverview {
+  padding: 10px;
+  font-size: 18pt;
+}
+
+.cartItem {
+  font-size: 10pt;
+}
+
+.cartItemPrice {
+  color: #CE113D;
+}
+
+.cartOverviewContent img{
+  width: 50px;
+  height: 50px;
+}
+
+.cartItemInfoNB {
+  width: 150px;
+}
+
+.cartItemQuantityButton {
+  width: 90px;
+  font-size: 20pt;
+  font-weight: lighter;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.cartItemQuantityButton button{
+  background-color: white;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20pt;
+}
+
+.cartItemRemoveButton button{
+  background-color: white;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20pt;
+}
+
+#cartItemQuantitydecButton{
+  margin-right: 3px;
+}
+
+#cartItemQuantitydecButton:hover{
+  cursor: pointer;
+}
+
+#cartItemQuantityincButton:hover{
+  cursor: pointer;
+}
+
+#cartItemQuantityincButton{
+  margin-left: 3px;
+}
+
+.cartItemQuantityNum {
+  font-size: 15pt;
+  font-weight: lighter;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.cartItemRemoveButton {
+  width: 50px;
+}
+
+#cartRemoveButton:hover{
+  cursor: pointer;
+}
+
+.cartOverviewSub{
+  color: #CE113D;
+}
+
+.checkoutButton button{
+  margin-top: 10px;
+  border-style: solid;
+  border-width: .5px;
+  border-color: #000;
+  border-radius: 8px;
+  background-color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18pt;
+}
+
+#checkOutButton:hover{
+  cursor:pointer;
 }

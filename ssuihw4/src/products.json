@@ -1,0 +1,42 @@
+[
+	{
+		"id": "product0",
+		"name": "Peanut Butter Dog Cookie",
+		"image": "/images/peanutButterCookie.jpg", 
+		"altText": "dog cookie", 
+		"quantity": 1, 
+		"price": 2, 
+		"description": "($2/lb)", 
+		"detail": "This peanut butter cookie will make your dog fall in love!"
+	},
+	{
+		"id": "product1",
+		"name": "Bacon Dog Cookie",
+		"image": "/images/baconCookie.jpg", 
+		"altText": "dog cookie", 
+		"quantity": 1, 
+		"price": 2, 
+		"description": "($2/lb)", 
+		"detail": "This bacon dog cookie is the best thing ever!"
+	},
+	{
+		"id": "product2",
+		"name": "Sausage Dog Cookie",
+		"image": "/images/sausageCookie.jpg", 
+		"altText": "dog cookie", 
+		"quantity": 1, 
+		"price": 3, 
+		"description": "($3/lb)", 
+		"detail": "This sausage dog cookie is our best selling product!"
+	},
+	{
+		"id": "product3",
+		"name": "*Diet* Peanut Butter Dog Cookie",
+		"image": "/images/peanutButterCookie.jpg", 
+		"altText": "dog cookie", 
+		"quantity": 1, 
+		"price": 3, 
+		"description": "($3/lb)", 
+		"detail": "A healthy alternative for your dog!"
+	}
+]
