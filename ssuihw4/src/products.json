@@ -2,7 +2,7 @@
 	{
 		"id": "product0",
 		"name": "Peanut Butter Dog Cookie",
-		"image": "/images/peanutButterCookie.jpg", 
+		"image": "./images/peanutButterCookie.jpg", 
 		"altText": "dog cookie", 
 		"quantity": 1, 
 		"price": 2, 
@@ -12,7 +12,7 @@
 	{
 		"id": "product1",
 		"name": "Bacon Dog Cookie",
-		"image": "/images/baconCookie.jpg", 
+		"image": "./images/baconCookie.jpg", 
 		"altText": "dog cookie", 
 		"quantity": 1, 
 		"price": 2, 
@@ -22,7 +22,7 @@
 	{
 		"id": "product2",
 		"name": "Sausage Dog Cookie",
-		"image": "/images/sausageCookie.jpg", 
+		"image": "./images/sausageCookie.jpg", 
 		"altText": "dog cookie", 
 		"quantity": 1, 
 		"price": 3, 
@@ -32,7 +32,7 @@
 	{
 		"id": "product3",
 		"name": "*Diet* Peanut Butter Dog Cookie",
-		"image": "/images/peanutButterCookie.jpg", 
+		"image": "./images/peanutButterCookie.jpg", 
 		"altText": "dog cookie", 
 		"quantity": 1, 
 		"price": 3, 
